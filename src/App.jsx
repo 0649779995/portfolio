@@ -90,6 +90,24 @@ export default function PortfolioWebsite() {
             >
               Contact Me
             </a>
+
+            <a
+              href="/Anele_Mazibuko_CV.pdf"
+              download
+              style={{
+                display: 'inline-block',
+                marginRight: '12px',
+                padding: '12px 20px',
+                borderRadius: '10px',
+                background: '#22c55e',
+                color: '#ffffff',
+                textDecoration: 'none',
+                fontWeight: 700,
+              }}
+            >
+              Download CV
+            </a>
+
             <a
               href="https://github.com/0649779995/portfolio"
               target="_blank"
@@ -126,7 +144,31 @@ export default function PortfolioWebsite() {
               innovation, collaboration, and community-focused solutions.
             </p>
             <div style={{ marginTop: '22px' }}>
-              {skills.map((skill) => (
+              <h3 style={{ fontSize: '20px', marginBottom: '10px' }}>Technical Skills</h3>
+              {[
+                'Python (Flask)',
+                'Web Development (HTML, CSS, Bootstrap, Jinja2)',
+                'SQLAlchemy / Databases',
+                'Artificial Intelligence',
+                'Machine Learning',
+                'Cloud Computing',
+                'Big Data',
+              ].map((skill) => (
+                <span key={skill} style={tagStyle}>
+                  {skill}
+                </span>
+              ))}
+
+              <h3 style={{ fontSize: '20px', margin: '20px 0 10px' }}>Professional Skills</h3>
+              {[
+                'Project Management',
+                'Communication',
+                'Leadership',
+                'Teamwork',
+                'Problem-Solving',
+                'Organization',
+                'Time Management',
+              ].map((skill) => (
                 <span key={skill} style={tagStyle}>
                   {skill}
                 </span>
@@ -218,7 +260,7 @@ export default function PortfolioWebsite() {
             <div style={{ marginBottom: '20px' }}>
               <h3 style={{ margin: '0 0 6px', fontSize: '22px' }}>Student Ambassador</h3>
               <p style={{ margin: '0 0 8px', color: '#64748b', fontSize: '16px' }}>
-                Durban University of Technology | Jan 2025 – Feb 2026
+                Durban University of Technology | Feb 2025 – Feb 2026
               </p>
               <p style={{ margin: 0, color: '#334155', fontSize: '17px', lineHeight: 1.7 }}>
                 Support student engagement, promote academic opportunities, and represent the
@@ -250,7 +292,7 @@ export default function PortfolioWebsite() {
           </div>
 
           <div style={cardStyle}>
-            <h2 style={{ marginTop: 0, fontSize: '30px', marginBottom: '18px' }}>Education & Certifications</h2>
+            <h2 style={{ marginTop: 0, fontSize: '30px', marginBottom: '18px' }}>Education, Certifications & Additional Information</h2>
 
             <div style={{ marginBottom: '22px' }}>
               <h3 style={{ margin: '0 0 8px', fontSize: '22px' }}>Education</h3>
@@ -273,6 +315,15 @@ export default function PortfolioWebsite() {
                 <li>NDG Linux Unhatched – Cisco Networking Academy</li>
                 <li>Microsoft Power Platform Fundamentals</li>
               </ul>
+
+            <div style={{ marginTop: '20px' }}>
+              <h3 style={{ margin: '0 0 8px', fontSize: '22px' }}>Additional Information</h3>
+              <ul style={{ margin: 0, paddingLeft: '22px', color: '#334155', fontSize: '17px', lineHeight: 1.9 }}>
+                <li>Driver’s License (Code 10)</li>
+                <li>Strong interest in digital and creative industries</li>
+                <li>Willing to learn and adapt to new technologies</li>
+              </ul>
+            </div>
             </div>
           </div>
         </section>

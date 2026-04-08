@@ -213,12 +213,12 @@ export default function PortfolioWebsite() {
           }}
         >
           <div style={cardStyle}>
-            <h2 style={{ marginTop: 0, fontSize: '30px', marginBottom: '18px' }}>Experience</h2>
+            <h2 style={{ marginTop: 0, fontSize: '30px', marginBottom: '18px' }}>Leadership Experience</h2>
 
             <div style={{ marginBottom: '20px' }}>
               <h3 style={{ margin: '0 0 6px', fontSize: '22px' }}>Student Ambassador</h3>
               <p style={{ margin: '0 0 8px', color: '#64748b', fontSize: '16px' }}>
-                Durban University of Technology | Jan 2025 – Present
+                Durban University of Technology | Jan 2025 – Feb 2026
               </p>
               <p style={{ margin: 0, color: '#334155', fontSize: '17px', lineHeight: 1.7 }}>
                 Support student engagement, promote academic opportunities, and represent the

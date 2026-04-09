@@ -92,7 +92,10 @@ export default function PortfolioWebsite() {
             </a>
 
             <a
+              
               href="/Anele_Mazibuko_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               download
               style={{
                 display: 'inline-block',
